@@ -20,7 +20,7 @@ struct NewItemView: View {
             
             Form {
                 // Title
-                TextField("Add A New Todo", text: $viewModel.title)
+                TextField("Add A New Todo and select a due date", text: $viewModel.title)
                     .textFieldStyle(.automatic)
                 // DueDate
                 DatePicker("Due Date", selection: $viewModel.dueDate)
